@@ -12,28 +12,28 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #EBEBEE;
+  background-color: #2C2C2C;
   gap: 16px;
   padding: 16px;
 }
 body .text-body {
   font-size: 16px;
-  color: #14213D;
+  color: #D4D4D4;
 }
 body .text-title {
   font-size: 20px;
   font-weight: bold;
-  color: #020306;
+  color: #fff;
 }
 body .text-button-var {
   font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
-  color: #14213D;
+  color: #EDEDED;
 }
 body .card {
   align-items: flex-start;
-  background: #FFf;
+  background: #454545;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ body .card .item-chip {
   gap: 4px;
   border-radius: 16px;
   padding: 4px 12px;
-  background-color: #F7F8F9;
+  background-color: #5E5E5E;
 }
 body .card .item-chip--spotify {
   display: flex;
@@ -66,6 +66,7 @@ body .card .item-chip--spotify {
   padding: 4px 12px;
   background-color: #d2f1dd;
   cursor: pointer;
+  color: #2C2C2C;
 }
 
 @media (max-width: 760px) {
@@ -83,7 +84,7 @@ body .card .item-chip--spotify {
 }
 @media (min-width: 761px) {
   body {
-    padding: 24px 120px;
+    padding: 32px 120px;
   }
   body .profile-img {
     border-radius: 50%;
