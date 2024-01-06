@@ -1,0 +1,140 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-shadow: border-box;
+}
+* a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBEBEE;
+}
+body .text {
+  color: #14213D;
+  text-align: center;
+}
+body .text-notes {
+  font-size: 16px;
+}
+body .links {
+  display: flex;
+}
+body .link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+body .item {
+  position: relative;
+  border: 2px solid transparent;
+  background-color: #F7F8F9;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+body .item:hover {
+  background-color: #fff !important;
+  border: 2px solid #3E66BD;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+body .tooltip {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  color: #14213D;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  left: 50%;
+  opacity: 0;
+  padding: 4px 12px;
+  pointer-events: none;
+  position: absolute;
+  top: 113px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
+  display: none;
+}
+
+@media (max-width: 760px) {
+  body {
+    width: calc(100vw - 32px);
+    height: calc(100vh - 32px);
+    padding: 16px;
+    gap: 32px;
+  }
+  body .text-title {
+    font-size: 32px;
+  }
+  body .text-body {
+    font-size: 16px;
+  }
+  body .links {
+    gap: 16px;
+  }
+  body .links .item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+  }
+  body .links .item i {
+    font-size: 32px;
+    color: #2C4885;
+  }
+  body .desktop {
+    display: none;
+  }
+  body .mobile {
+    display: flex;
+  }
+}
+@media (min-width: 761px) {
+  body {
+    width: calc(100vw - 240px);
+    height: calc(100vh - 240px);
+    padding: 120px;
+    gap: 64px;
+  }
+  body .item:hover .tooltip {
+    opacity: 1;
+    display: flex;
+  }
+  body .text-title {
+    font-size: 48px;
+    text-align: center;
+  }
+  body .text-body {
+    font-size: 24px;
+  }
+  body .links {
+    gap: 16px;
+  }
+  body .links .item {
+    width: 96px;
+    height: 96px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+  }
+  body .links .item i {
+    font-size: 64px;
+    color: #2C4885;
+  }
+  body .desktop {
+    display: flex;
+  }
+  body .mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

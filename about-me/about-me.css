@@ -1,0 +1,99 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  box-shadow: border-box;
+}
+* a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EBEBEE;
+  gap: 16px;
+  padding: 16px;
+}
+body .text-body {
+  font-size: 16px;
+  color: #14213D;
+}
+body .text-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #020306;
+}
+body .text-button-var {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #14213D;
+}
+body .card {
+  align-items: flex-start;
+  background: #FFf;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  width: -webkit-fill-available;
+}
+body .card .list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: -webkit-fill-available;
+  gap: 8px;
+  padding: 0;
+}
+body .card .item-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 16px;
+  padding: 4px 12px;
+  background-color: #F7F8F9;
+}
+body .card .item-chip--spotify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 16px;
+  padding: 4px 12px;
+  background-color: #d2f1dd;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  body .profile-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 4px solid white;
+  }
+  body .duo-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media (min-width: 761px) {
+  body {
+    padding: 24px 120px;
+  }
+  body .profile-img {
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    border: 4px solid white;
+  }
+  body .duo-items {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+  }
+}/*# sourceMappingURL=about-me.css.map */
