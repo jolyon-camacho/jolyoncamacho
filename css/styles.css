@@ -117,7 +117,7 @@ body .main .main__cards .card--cursor:active {
 
 @media (min-width: 761px) {
   body {
-    padding: 32px 240px;
+    padding: 32px 120px;
   }
   body .main .main__links .main__link {
     height: 48px;
