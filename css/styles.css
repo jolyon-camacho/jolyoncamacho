@@ -19,6 +19,7 @@ body .main {
 body .main .section-group {
   display: flex;
   padding: 0px 16px;
+  width: -webkit-fill-available;
 }
 body .main .section-group .item {
   flex-grow: 1;
@@ -57,6 +58,9 @@ body .main .section-group .cards .card .card__title .title__img-group img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+body .main .section-group .cards .card .card__title .title__group {
+  width: 100%;
 }
 body .main .section-group .cards .card .card__title .title__group--align {
   width: 60%;
@@ -124,6 +128,59 @@ body .main .section-group .links-group .link {
 body .main .section-group .links-group .link:hover {
   cursor: pointer;
   background-color: #525252;
+}
+body .main .section-group--vertical {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+  width: -webkit-fill-available;
+  gap: 16px;
+}
+body .main .section-group--vertical .projects-cards {
+  display: flex;
+  gap: 16px;
+  width: -webkit-fill-available;
+}
+body .main .section-group--vertical .projects-cards .card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+body .main .section-group--vertical .projects-cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  aspect-ratio: 16/9;
+  -o-object-position: center;
+     object-position: center;
+}
+body .main .section-group--vertical .projects-cards .card .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+body .main .section-group--vertical .projects-cards .card .card__content .title {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+body .main .section-group--vertical .projects-cards .card .card__content .tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+body .main .section-group--vertical .projects-cards .card .card__content .tags .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 4px 12px;
+  background-color: white;
 }
 body .main .title-gradient {
   background: linear-gradient(90deg, #E3F2EF 0.97%, #3AE5E2 20.49%, #E3F2EF 37.67%);

@@ -21,6 +21,7 @@ body {
         .section-group {
             display: flex;
             padding: 0px 16px;
+            width: -webkit-fill-available;
 
             .item {
                 // flex:1 1 auto;
@@ -63,6 +64,11 @@ body {
                                 object-fit: cover;
                                 object-position: center;
                             }
+                        }
+
+
+                        .title__group {
+                            width: 100%;
                         }
 
                         .title__group--align {
@@ -146,6 +152,65 @@ body {
                 .link:hover {
                     cursor: pointer;
                     background-color: #525252;
+                }
+            }
+        }
+
+        .section-group--vertical {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 16px;
+            width: -webkit-fill-available;
+            gap: 16px;
+            
+            .projects-cards {
+                display: flex;
+                gap: 16px;
+                width: -webkit-fill-available;
+
+                .card {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    border-radius: 16px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);    
+                    background: rgba(255, 255, 255, 0.05);
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 16px 16px 0 0;
+                        aspect-ratio: 16 / 9;
+                        object-position: center;
+                    }
+
+                    .card__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        padding: 16px;
+
+                        .title {
+                            display: flex;
+                            justify-content: space-between;
+                            color: white;
+                        }
+
+                        .tags {
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+
+                            .tag {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 8px;
+                                padding: 4px 12px;
+                                background-color: white;
+                            }
+                        }
+                    }
                 }
             }
         }
