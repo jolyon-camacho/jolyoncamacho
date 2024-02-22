@@ -34,8 +34,10 @@ body {
                 align-items: flex-start;
                 gap: 16px;
                 // flex: 1 0 0;
-
+                width: 100%;
+                
                 .card {
+                    width: -webkit-fill-available;
                     display: flex;
                     padding: 24px;
                     flex-direction: column;
@@ -127,6 +129,7 @@ body {
             .links-group {
                 display: flex;
                 flex-wrap: wrap;
+                align-items: flex-start;
                 gap: 16px;
 
                 .link {
