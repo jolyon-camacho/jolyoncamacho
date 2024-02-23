@@ -238,7 +238,10 @@ body {
             position: relative;
 
             .img-decoration1 {
-                width: 10%;
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+                top: -109px;
             }
 
             .img-presentation {
@@ -279,6 +282,23 @@ body {
         .line-separation {
             height: 1px;
             background: #3D3D3D;
+        }
+
+        .decoration {
+            width: 100%;
+            position: absolute;
+            top: 1172px;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .decoration2 {
+            width: 100%;
+            position: absolute;
+            top: 3396px;
+            left: -264px;
+            z-index: -1;
+            height: 578px;
         }
     }
 }

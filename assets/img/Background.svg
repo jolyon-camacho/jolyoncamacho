@@ -1,0 +1,23 @@
+<svg width="829" height="677" viewBox="0 0 829 677" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1418_2534" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-16" y="-270" width="845" height="947">
+<rect x="-16" y="-270" width="845" height="947" fill="url(#paint0_linear_1418_2534)"/>
+</mask>
+<g mask="url(#mask0_1418_2534)">
+<circle opacity="0.9" cx="78" cy="4" r="111.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.8" cx="78" cy="4" r="159.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.7" cx="78" cy="4" r="207.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.6" cx="78" cy="4" r="255.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.5" cx="78" cy="4" r="303.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.4" cx="78" cy="4" r="351.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.3" cx="78" cy="4" r="399.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.2" cx="78" cy="4" r="447.5" stroke="white" stroke-opacity="0.2"/>
+<circle opacity="0.1" cx="78" cy="4" r="495.5" stroke="white" stroke-opacity="0.2"/>
+<circle cx="78" cy="4" r="63.5" stroke="white" stroke-opacity="0.2"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1418_2534" x1="406.5" y1="-270" x2="406.5" y2="677" gradientUnits="userSpaceOnUse">
+<stop offset="0.437233" stop-color="white"/>
+<stop offset="0.662338" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

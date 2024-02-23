@@ -203,7 +203,10 @@ body .main .profile-presentation {
   position: relative;
 }
 body .main .profile-presentation .img-decoration1 {
-  width: 10%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -109px;
 }
 body .main .profile-presentation .img-presentation {
   width: 100%;
@@ -239,6 +242,21 @@ body .main .profile-presentation .profile__group .presentation {
 body .main .line-separation {
   height: 1px;
   background: #3D3D3D;
+}
+body .main .decoration {
+  width: 100%;
+  position: absolute;
+  top: 1172px;
+  left: 0;
+  z-index: -1;
+}
+body .main .decoration2 {
+  width: 100%;
+  position: absolute;
+  top: 3396px;
+  left: -264px;
+  z-index: -1;
+  height: 578px;
 }
 
 :root .color--white-pure {
