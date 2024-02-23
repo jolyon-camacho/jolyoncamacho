@@ -182,6 +182,10 @@ body .main .section-group--vertical .projects-cards .card .card__content .tags .
   padding: 4px 12px;
   background-color: white;
 }
+body .main .section-group--vertical .projects-cards .card:hover {
+  cursor: pointer;
+  background-color: #525252;
+}
 body .main .title-gradient {
   background: linear-gradient(90deg, #E3F2EF 0.97%, #3AE5E2 20.49%, #E3F2EF 37.67%);
   background-clip: text;
