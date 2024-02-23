@@ -7,32 +7,31 @@
   text-decoration: none;
 }
 
-body {
-  background-color: #292929;
-}
-body .main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 }
-body .main .section-group {
+.main .section-group {
+  flex-direction: column;
+  gap: 16px;
   display: flex;
   padding: 16px;
   width: -webkit-fill-available;
 }
-body .main .section-group .item {
+.main .section-group .item {
   flex-grow: 1;
   width: 100%;
 }
-body .main .section-group .cards {
+.main .section-group .cards {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   width: 100%;
 }
-body .main .section-group .cards .card {
+.main .section-group .cards .card {
   width: -webkit-fill-available;
   display: flex;
   padding: 24px;
@@ -42,15 +41,21 @@ body .main .section-group .cards .card {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: #3D3D3D;
 }
-body .main .section-group .cards .card .card__title {
+.main .section-group .cards .card .card__title {
+  flex-direction: column;
+  gap: 16px;
   display: flex;
 }
-body .main .section-group .cards .card .card__title .title__img-group {
+.main .section-group .cards .card .card__title i:nth-child(2) {
+  display: none;
+}
+.main .section-group .cards .card .card__title .title__img-group {
   display: flex;
   gap: 16px;
   width: 100%;
 }
-body .main .section-group .cards .card .card__title .title__img-group img {
+.main .section-group .cards .card .card__title .title__img-group img {
+  order: 1;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -59,7 +64,7 @@ body .main .section-group .cards .card .card__title .title__img-group img {
   -o-object-position: center;
      object-position: center;
 }
-body .main .section-group .cards .card .card__title .title__img-group .icon-title {
+.main .section-group .cards .card .card__title .title__img-group .icon-title {
   width: 74px;
   height: 64px;
   background-color: rgba(255, 255, 255, 0.1921568627);
@@ -68,31 +73,33 @@ body .main .section-group .cards .card .card__title .title__img-group .icon-titl
   align-items: center;
   justify-content: center;
 }
-body .main .section-group .cards .card .card__title .title__img-group .icon-title i {
+.main .section-group .cards .card .card__title .title__img-group .icon-title i {
   font-size: 24px;
   color: white;
 }
-body .main .section-group .cards .card .card__title .title__group {
+.main .section-group .cards .card .card__title .title__group {
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-body .main .section-group .cards .card .card__title .title__group--align {
-  width: 60%;
+.main .section-group .cards .card .card__title .title__group--align {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-body .main .section-group .cards .card .card__title .title__group--align p {
-  text-align: right;
-}
-body .main .section-group .cards .card .experience__skills {
+.main .section-group .cards .card .experience__skills {
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 100%;
 }
-body .main .section-group .cards .card .experience__skills .skills-group {
+.main .section-group .cards .card .experience__skills .skills-group {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-body .main .section-group .cards .card .experience__skills .skills-group .chip--one {
+.main .section-group .cards .card .experience__skills .skills-group .chip--one {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +109,7 @@ body .main .section-group .cards .card .experience__skills .skills-group .chip--
   color: #E3F2EF;
   background-color: rgba(157, 211, 199, 0.1254901961);
 }
-body .main .section-group .cards .card .experience__skills .skills-group .chip--two {
+.main .section-group .cards .card .experience__skills .skills-group .chip--two {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +119,7 @@ body .main .section-group .cards .card .experience__skills .skills-group .chip--
   color: #D6EBFF;
   background-color: rgba(0, 72, 138, 0.2);
 }
-body .main .section-group .cards .card .experience__skills .skills-group .chip--three {
+.main .section-group .cards .card .experience__skills .skills-group .chip--three {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,17 +129,17 @@ body .main .section-group .cards .card .experience__skills .skills-group .chip--
   color: #f9d6ff;
   background-color: rgba(81, 7, 107, 0.1254901961);
 }
-body .main .section-group .cards .hover-card:hover {
+.main .section-group .cards .hover-card:hover {
   background-color: #595959;
   cursor: pointer;
 }
-body .main .section-group .links-group {
+.main .section-group .links-group {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 16px;
 }
-body .main .section-group .links-group .link {
+.main .section-group .links-group .link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,24 +149,25 @@ body .main .section-group .links-group .link {
   gap: 8px;
   color: #cccccc;
 }
-body .main .section-group .links-group .link:hover {
+.main .section-group .links-group .link:hover {
   cursor: pointer;
   background-color: #525252;
   color: white;
 }
-body .main .section-group--vertical {
+.main .section-group--vertical {
   display: flex;
   flex-direction: column;
   padding: 0px 16px;
   width: -webkit-fill-available;
   gap: 16px;
 }
-body .main .section-group--vertical .projects-cards {
+.main .section-group--vertical .projects-cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   width: -webkit-fill-available;
 }
-body .main .section-group--vertical .projects-cards .card {
+.main .section-group--vertical .projects-cards .card {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -167,7 +175,7 @@ body .main .section-group--vertical .projects-cards .card {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
-body .main .section-group--vertical .projects-cards .card img {
+.main .section-group--vertical .projects-cards .card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -176,23 +184,23 @@ body .main .section-group--vertical .projects-cards .card img {
   -o-object-position: center;
      object-position: center;
 }
-body .main .section-group--vertical .projects-cards .card .card__content {
+.main .section-group--vertical .projects-cards .card .card__content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 16px;
 }
-body .main .section-group--vertical .projects-cards .card .card__content .title {
+.main .section-group--vertical .projects-cards .card .card__content .title {
   display: flex;
   justify-content: space-between;
   color: white;
 }
-body .main .section-group--vertical .projects-cards .card .card__content .tags {
+.main .section-group--vertical .projects-cards .card .card__content .tags {
   display: flex;
   gap: 8px;
   align-items: center;
 }
-body .main .section-group--vertical .projects-cards .card .card__content .tags .tag {
+.main .section-group--vertical .projects-cards .card .card__content .tags .tag {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,79 +208,67 @@ body .main .section-group--vertical .projects-cards .card .card__content .tags .
   padding: 4px 12px;
   background-color: white;
 }
-body .main .section-group--vertical .projects-cards .card:hover {
+.main .section-group--vertical .projects-cards .card:hover {
   cursor: pointer;
   background-color: #525252;
 }
-body .main .profile-presentation {
+.main .profile-presentation {
   display: flex;
   flex-direction: column;
   margin: 16px;
-  height: 516px;
+  height: 356px;
   position: relative;
 }
-body .main .profile-presentation .decoration__presentation {
-  width: 992px;
-  position: absolute;
-  z-index: -1;
-  top: -40px;
-  left: calc(50% - 480px);
-  margin: auto;
+.main .profile-presentation .decoration__presentation {
+  display: none;
 }
-body .main .profile-presentation .img-presentation {
+.main .profile-presentation .img-presentation {
   width: 100%;
-  height: 320px;
+  height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 16px;
+  border-radius: 32px;
 }
-body .main .profile-presentation .profile__group {
+.main .profile-presentation .profile__group {
   position: absolute;
-  left: 16px;
-  bottom: 40px;
+  left: 0px;
+  bottom: -8px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
-body .main .profile-presentation .profile__group img {
+.main .profile-presentation .profile__group img {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   border: 4px solid white;
 }
-body .main .profile-presentation .profile__group .presentation {
+.main .profile-presentation .profile__group .presentation {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 }
-body .main .exp__lab {
+.main .profile-presentation .profile__group .presentation p:nth-child(2) {
+  display: none;
+}
+.main .exp__lab {
   position: relative;
 }
-body .main .exp__lab .decoration__exp-lab {
-  width: 720px;
-  position: absolute;
-  z-index: -1;
-  top: -24px;
-  left: -16px;
-  margin: auto;
+.main .exp__lab .decoration__exp-lab {
+  display: none;
 }
-body .main .education {
+.main .education {
   position: relative;
 }
-body .main .education .decoration__education {
-  width: 720px;
-  position: absolute;
-  z-index: -1;
-  top: -24px;
-  left: -16px;
-  margin: auto;
+.main .education .decoration__education {
+  display: none;
 }
-body .main .bye-section {
+.main .bye-section {
   background-color: #181818;
   display: flex;
   flex-direction: column;
@@ -281,37 +277,118 @@ body .main .bye-section {
   position: relative;
   padding: 40px 0;
 }
-body .main .bye-section .decoration__bye {
-  width: 992px;
-  position: absolute;
-  top: 0;
+.main .bye-section .decoration__bye {
+  display: none;
 }
-body .main .bye-section p {
+.main .bye-section p {
   text-align: center;
 }
-body .main .bye-section .presentation {
+.main .bye-section .presentation {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
-body .main .title-gradient {
+.main .title-gradient {
   background: linear-gradient(90deg, #E3F2EF 0.97%, #3AE5E2 20.49%, #E3F2EF 37.67%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   flex-basis: 100%;
 }
-body .main .line-separation {
+.main .line-separation {
   height: 1px;
   background: #3D3D3D;
 }
-body .main .btn-tertiary {
+.main .btn-tertiary {
   text-decoration: underline;
 }
-body .main .btn-tertiary:hover {
+.main .btn-tertiary:hover {
   cursor: pointer;
   color: #c6c6c6;
+}
+
+@media (min-width: 721px) {
+  .main .section-group {
+    flex-direction: row;
+  }
+  .main .section-group .cards .card .card__title {
+    flex-direction: row;
+  }
+  .main .section-group .cards .card .card__title i:nth-child(2) {
+    display: block;
+  }
+  .main .section-group .cards .card .card__title .title__img-group {
+    display: flex;
+  }
+  .main .section-group .cards .card .card__title .title__img-group img {
+    order: 0;
+  }
+  .main .section-group .cards .card .card__title .title__group {
+    width: 100%;
+  }
+  .main .section-group .cards .card .card__title .title__group--align {
+    width: 60%;
+    flex-direction: column;
+  }
+  .main .section-group .cards .card .card__title .title__group--align p {
+    text-align: right;
+  }
+  .main .section-group--vertical .projects-cards {
+    flex-wrap: nowrap;
+  }
+  .main .profile-presentation {
+    display: flex;
+    height: 516px;
+  }
+  .main .profile-presentation .decoration__presentation {
+    display: block;
+    width: 992px;
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: calc(50% - 496px);
+  }
+  .main .profile-presentation .img-presentation {
+    height: 320px;
+  }
+  .main .profile-presentation .profile__group {
+    position: absolute;
+    bottom: 40px;
+  }
+  .main .profile-presentation .profile__group .presentation {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .main .profile-presentation .profile__group .presentation p:nth-child(2) {
+    display: block;
+  }
+  .main .exp__lab .decoration__exp-lab {
+    display: block;
+    width: 720px;
+    position: absolute;
+    z-index: -1;
+    top: -24px;
+    left: -16px;
+  }
+  .main .education .decoration__education {
+    display: block;
+    width: 720px;
+    position: absolute;
+    z-index: -1;
+    top: -24px;
+    left: -16px;
+    margin: auto;
+  }
+  .main .bye-section .decoration__bye {
+    display: block;
+    width: 992px;
+    position: absolute;
+    top: 0;
+  }
+}
+body {
+  background-color: #292929;
 }
 
 :root .color--white-pure {
